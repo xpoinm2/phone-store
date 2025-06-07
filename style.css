@@ -77,3 +77,16 @@ body {
 .buy-button:hover {
   background: #0056b3;
 }
+
+.product a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.product:hover {
+  background-color: #e0f0ff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
