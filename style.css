@@ -1,48 +1,54 @@
-/* Reset */
+/* Сброс */
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Segoe UI', sans-serif; background:#F5F5F5; color:#1F2937; }
+body { font-family: Arial, sans-serif; background:#F5F5F5; color:#1F2937; }
 .container { width:90%; max-width:1200px; margin:0 auto; }
-/* Header */
-.site-header { background:#1F2937; color:#fff; padding:10px 0; }
-.site-header .container { display:flex; align-items:center; justify-content:space-between; }
-.logo img { height:40px; vertical-align:middle; }
-.logo span { font-size:24px; margin-left:10px; }
-.contact-info a { color:#fff; margin-left:15px; text-decoration:none; }
-.hamburger { font-size:28px; background:none; border:none; color:#fff; cursor:pointer; }
 
-/* Sidebar & Overlay */
-.sidebar { position:fixed; top:0; left:-300px; width:300px; height:100%; background:#fff; box-shadow:2px 0 8px rgba(0,0,0,0.2); padding:20px; transition:left 0.3s ease; z-index:1000; }
+/* Header */
+.header { background:#fff; }
+.header-top { display:flex; align-items:center; justify-content:space-between; padding:10px 0; }
+.top-nav a { margin:0 10px; text-decoration:none; color:#1F2937; }
+.contact-icons { display:flex; align-items:center; }
+.contact-icons .icon { margin-right:10px; }
+.contact-icons .phone { font-weight:bold; }
+.hamburger { font-size:24px; background:none; border:none; cursor:pointer; }
+.header-title { text-align:center; padding:40px 0; }
+.header-title h1 { font-size:32px; margin-bottom:10px; }
+.header-buttons .btn { margin:10px; padding:10px 20px; border-radius:4px; text-decoration:none; }
+.btn-primary { background:#FF6B6B; color:#fff; }
+.btn-secondary { background:#1F2937; color:#fff; }
+
+/* Sidebar */
+.sidebar { position:fixed; top:0; left:-300px; width:300px; height:100%; background:#fff; padding:20px; transition:left 0.3s; z-index:1000; }
 .sidebar.open { left:0; }
 .sidebar ul { list-style:none; }
 .sidebar li { margin:15px 0; }
-.sidebar a { color:#1F2937; text-decoration:none; padding:8px 12px; display:block; border-radius:4px; transition:background 0.2s; }
-.sidebar a:hover { background:#FF6B6B; color:#fff; }
-.overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; visibility:hidden; transition:opacity 0.3s; z-index:900; }
+.sidebar a { text-decoration:none; color:#1F2937; }
+.close-sidebar { background:none; border:none; font-size:24px; float:right; cursor:pointer; }
+.overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); opacity:0; visibility:hidden; transition:opacity 0.3s; }
 .overlay.open { opacity:1; visibility:visible; }
 
-/* Slider */
-.slider { position:relative; overflow:hidden; margin:20px 0; }
-.slide { display:none; }
-.slide.active { display:block; }
-.slider img { width:100%; display:block; }
-.prev, .next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(31,41,55,0.6); border:none; color:#fff; font-size:30px; cursor:pointer; padding:10px; }
-.prev { left:10px; }
-.next { right:10px; }
+/* Products */
+.products h2 { text-align:center; margin:40px 0 20px; }
+.product-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.product-card { background:#fff; padding:20px; border-radius:8px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+.product-card img { max-width:100%; border-radius:4px; margin-bottom:10px; }
 
-/* Categories */
-.categories { padding:40px 0; }
-.categories h2 { text-align:center; color:#1F2937; margin-bottom:20px; }
-.grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:20px; }
-.card { background:#fff; padding:20px; text-align:center; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-decoration:none; color:#1F2937; transition:transform 0.2s, background 0.2s; }
-.card:hover { transform:translateY(-5px); background:#FF6B6B; color:#fff; }
+/* About */
+.about { background:#fff; padding:40px 0; }
+.stats { display:flex; justify-content:space-around; margin-top:20px; }
+.stats li { list-style:none; text-align:center; }
+.stats span { font-size:24px; font-weight:bold; display:block; }
 
 /* Advantages */
-.advantages { display:flex; justify-content:space-between; background:#fff; padding:40px 0; margin-top:40px; }
-.adv { text-align:center; width:30%; }
-.adv img { height:60px; margin-bottom:10px; }
-.adv p { font-size:18px; }
+.advantages { display:flex; justify-content:space-around; padding:40px 0; }
+.adv-card { text-align:center; }
+.adv-card img { height:60px; margin-bottom:10px; }
+
+/* Services */
+.services { background:#fff; padding:40px 0; }
+.services ul { list-style:disc; margin-left:20px; }
+.services li { margin:10px 0; }
 
 /* Footer */
-.site-footer { background:#1F2937; color:#fff; padding:20px 0; margin-top:40px; }
-.footer-links a { color:#FF6B6B; margin:0 10px; text-decoration:none; }
-.footer-bottom { margin-top:10px; font-size:14px; }
+.footer { background:#fff; padding:20px 0; text-align:center; }
+.footer-nav a { margin:0 15px; text-decoration:none; color:#1F2937; }
