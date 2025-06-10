@@ -2,73 +2,52 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Electronik Optom - Главная</title>
+  <title>PhoneOptom — Главная</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header + Hamburger -->
-  <header class="site-header">
-    <div class="logo">
-      <img src="assets/logo.png" alt="Логотип"> Электроник-Опт
-    </div>
-    <div class="contact">
-      <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-      <a href="mailto:info@electronik-optom.ru">info@electronik-optom.ru</a>
-    </div>
-    <button class="hamburger">☰</button>
-  </header>
+  <!-- Header -->
+  <!--#include virtual="partials/header.html" -->
 
-  <!-- Sidebar Menu -->
+  <!-- Sidebar -->
   <nav class="sidebar">
     <ul>
-      <li><a href="categories/iphone16.html">iPhone 16 | Опт</a></li>
-      <li><a href="categories/iphone15.html">iPhone 15 | Опт</a></li>
-      <li><a href="categories/iphone14.html">iPhone 14 | Опт</a></li>
-      <li><a href="categories/iphone13.html">iPhone 13 | Розница</a></li>
-      <li><a href="categories/iphone12.html">iPhone 12 | Розница</a></li>
+      <li><a href="categories/iphone16.html">iPhone 16</a></li>
+      <li><a href="categories/iphone15.html">iPhone 15</a></li>
+      <li><a href="categories/iphone14.html">iPhone 14</a></li>
+      <li><a href="categories/iphone13.html">iPhone 13</a></li>
+      <li><a href="categories/iphone12.html">iPhone 12</a></li>
     </ul>
-    <div class="sidebar-footer">
-      <a href="#cart">Корзина</a>
-      <a href="contacts.html">Контакты</a>
-    </div>
   </nav>
-
-  <!-- Overlay -->
   <div class="overlay"></div>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main>
-    <!-- Слайдер -->
+    <!-- Slider Section -->
     <section class="slider">
-      <div class="slide"><img src="assets/slider1.jpg" alt="Акция 1"></div>
-      <div class="slide"><img src="assets/slider2.jpg" alt="Акция 2"></div>
-      <div class="slide"><img src="assets/slider3.jpg" alt="Акция 3"></div>
+      <div class="slide active"><img src="assets/banner1.jpg" alt="Акция 1"></div>
+      <div class="slide"><img src="assets/banner2.jpg" alt="Акция 2"></div>
+      <div class="slide"><img src="assets/banner3.jpg" alt="Акция 3"></div>
       <button class="prev">‹</button>
       <button class="next">›</button>
     </section>
 
-    <!-- Категории -->
+    <!-- Categories Grid -->
     <section class="categories">
-      <h2>Категории</h2>
-      <div class="grid">
-        <a href="categories/iphone16.html" class="card">iPhone 16 Pro</a>
-        <a href="categories/iphone16.html" class="card">iPhone 16</a>
-        <a href="categories/iphone15.html" class="card">iPhone 15 Pro</a>
-        <a href="categories/iphone15.html" class="card">iPhone 15</a>
-        <!-- и т.д. -->
+      <div class="container">
+        <h2>Категории</h2>
+        <div class="grid">
+          <a href="categories/iphone16.html" class="card">iPhone 16</a>
+          <a href="categories/iphone15.html" class="card">iPhone 15</a>
+          <a href="categories/iphone14.html" class="card">iPhone 14</a>
+          <a href="categories/iphone13.html" class="card">iPhone 13</a>
+          <a href="categories/iphone12.html" class="card">iPhone 12</a>
+        </div>
       </div>
     </section>
 
-    <!-- Топ предложения -->
-    <section class="top-offers">
-      <h2>Топ предложения</h2>
-      <div class="offer-carousel">
-        <!-- Карусель картинок товаров -->
-      </div>
-    </section>
-
-    <!-- Преимущества -->
-    <section class="advantages">
+    <!-- Advantages -->
+    <section class="advantages container">
       <div class="adv">
         <img src="assets/icon-price.png" alt="Цена">
         <p>Низкие оптовые цены</p>
@@ -85,17 +64,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-links">
-      <a href="about.html">О компании</a>
-      <a href="delivery.html">Доставка и оплата</a>
-      <a href="contacts.html">Контакты</a>
-      <a href="privacy.html">Политика конфиденциальности</a>
-    </div>
-    <div class="socials">
-      <!-- Иконки соцсетей -->
-    </div>
-  </footer>
+  <!--#include virtual="partials/footer.html" -->
 
   <script src="script.js"></script>
 </body>
