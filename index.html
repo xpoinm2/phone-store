@@ -2,69 +2,106 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>PhoneOptom — Главная</title>
+  <title>Электроник — оптовые поставки Apple</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <!--#include virtual="partials/header.html" -->
+  <header class="header">
+    <div class="header-top container">
+      <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Logo"></a>
+      <nav class="top-nav">
+        <a href="prisl-list.html">Прайс-лист</a>
+        <a href="dropshipping.html">Дропшиппинг</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="contact-icons">
+        <a href="#" class="icon whatsapp"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></a>
+        <a href="#" class="icon telegram"><img src="assets/icons/telegram.svg" alt="Telegram"></a>
+        <span class="phone">+7 (930) 238-00-00</span>
+      </div>
+      <button class="hamburger">☰</button>
+    </div>
+    <div class="header-title container">
+      <h1>Оптовые поставки восстановленных и б/у телефонов Apple</h1>
+      <p>Лучшие цены на айфоны оптом, с доставкой по РФ и СНГ</p>
+      <div class="header-buttons">
+        <a href="prisl-list.html" class="btn btn-primary">Посмотреть прайс-лист</a>
+        <a href="#" class="btn btn-secondary">Посмотреть видео</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- Sidebar -->
-  <nav class="sidebar">
+  <!-- Sidebar Menu -->
+  <aside class="sidebar">
+    <button class="close-sidebar">×</button>
     <ul>
-      <li><a href="categories/iphone16.html">iPhone 16</a></li>
-      <li><a href="categories/iphone15.html">iPhone 15</a></li>
-      <li><a href="categories/iphone14.html">iPhone 14</a></li>
-      <li><a href="categories/iphone13.html">iPhone 13</a></li>
-      <li><a href="categories/iphone12.html">iPhone 12</a></li>
+      <li><a href="#section-products">iPhone восстановленные</a></li>
+      <li><a href="#section-products">iPhone Б/У А+</a></li>
+      <li><a href="#section-products">iPhone REF оригинал</a></li>
+      <li><a href="#section-products">Apple Watch</a></li>
+      <li><a href="#section-products">AirPods</a></li>
+      <li><a href="#section-products">Samsung | Xiaomi</a></li>
+      <li><a href="#section-products">Аксессуары</a></li>
     </ul>
-  </nav>
+  </aside>
   <div class="overlay"></div>
 
-  <!-- Main -->
-  <main>
-    <!-- Slider Section -->
-    <section class="slider">
-      <div class="slide active"><img src="assets/banner1.jpg" alt="Акция 1"></div>
-      <div class="slide"><img src="assets/banner2.jpg" alt="Акция 2"></div>
-      <div class="slide"><img src="assets/banner3.jpg" alt="Акция 3"></div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </section>
+  <!-- Products Section -->
+  <section id="section-products" class="products container">
+    <h2>Наши продукты</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/products/prod1.jpg" alt="Product 1">
+        <h3>iPhone Восстановленный</h3>
+        <p>REF — экран не оригинал</p>
+        <a href="#" class="btn btn-primary">Посмотреть</a>
+      </div>
+      <!-- Копировать для других карточек -->
+    </div>
+  </section>
 
-    <!-- Categories Grid -->
-    <section class="categories">
-      <div class="container">
-        <h2>Категории</h2>
-        <div class="grid">
-          <a href="categories/iphone16.html" class="card">iPhone 16</a>
-          <a href="categories/iphone15.html" class="card">iPhone 15</a>
-          <a href="categories/iphone14.html" class="card">iPhone 14</a>
-          <a href="categories/iphone13.html" class="card">iPhone 13</a>
-          <a href="categories/iphone12.html" class="card">iPhone 12</a>
-        </div>
-      </div>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="about container">
+    <h2>О нас</h2>
+    <p>Компания “Электроник” работает с 2017 года...</p>
+    <ul class="stats">
+      <li><span>120+</span> партнёров</li>
+      <li><span>7 лет</span> на рынке</li>
+      <li><span>3%</span> брак</li>
+      <li><span>60 дней</span> гарантия</li>
+    </ul>
+  </section>
 
-    <!-- Advantages -->
-    <section class="advantages container">
-      <div class="adv">
-        <img src="assets/icon-price.png" alt="Цена">
-        <p>Низкие оптовые цены</p>
-      </div>
-      <div class="adv">
-        <img src="assets/icon-warranty.png" alt="Гарантия">
-        <p>Гарантия 1 год</p>
-      </div>
-      <div class="adv">
-        <img src="assets/icon-delivery.png" alt="Доставка">
-        <p>Быстрая доставка</p>
-      </div>
-    </section>
-  </main>
+  <!-- Advantages Section -->
+  <section class="advantages container">
+    <div class="adv-card"><img src="assets/icons/icon-price.svg"><p>Низкие цены</p></div>
+    <div class="adv-card"><img src="assets/icons/icon-warranty.svg"><p>Гарантия</p></div>
+    <div class="adv-card"><img src="assets/icons/icon-delivery.svg"><p>Быстрая доставка</p></div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services container">
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Поставка устройств А+ из Китая и Дубая</li>
+      <li>Проверка перед отправкой</li>
+      <li>Упаковка и логистика</li>
+      <li>Работа с браком</li>
+      <li>Разные способы оплаты</li>
+    </ul>
+  </section>
 
   <!-- Footer -->
-  <!--#include virtual="partials/footer.html" -->
+  <footer class="footer container">
+    <nav class="footer-nav">
+      <a href="index.html">Главная</a>
+      <a href="prisl-list.html">Прайс-лист</a>
+      <a href="dropshipping.html">Дропшиппинг</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <p>© 2025 Электроник. Все права защищены.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
