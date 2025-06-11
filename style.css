@@ -14,9 +14,23 @@ body { font-family:'Roboto', sans-serif; background:#FFFFFF; color:#1F2937; }
 .top-nav a { margin:0 15px; position:relative; text-decoration:none; font-weight:500; color:#1F2937; }
 .top-nav a::after { content:''; position:absolute; bottom:-5px; left:0; width:0; height:3px; background:#42aaff; transition:width 0.3s; }
 .top-nav a:hover::after { width:100%; }
-.contact-icons { display:flex; align-items:center; }
-.contact-icons .icon { margin-right:15px; }
-.contact-icons .icon img { width:24px; height:24px; }
+.contact-icons {
+  display:flex;
+  align-items:center;
+}
+.contact-icons .icon {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:#42aaff;
+  padding:8px;
+  border-radius:4px;
+  margin-right:15px;
+}
+.contact-icons .icon img {
+  width:24px;
+  height:24px;
+}
 .contact-icons .phone { font-weight:700; }
 .hamburger { font-size:28px; background:none; border:none; cursor:pointer; }
 
