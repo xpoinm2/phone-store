@@ -38,11 +38,15 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
 
 /* Navigation links */
 .top-nav a {
+  display: inline-block;
   margin: 0 15px;
   position: relative;
   text-decoration: none;
   font-weight: 500;
   color: #1F2937;
+  line-height: 1.4;        /* увеличенный межстрочный интервал */
+  white-space: normal;     /* разрешить перенос строк */
+  text-align: center;      /* выравнивание многострочного текста */
 }
 .top-nav a::after {
   content: '';
@@ -58,8 +62,7 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
   width: 100%;
 }
 
-/* Contact icons */
-.contact-icons {
+/* Contact icons */ {
   display: flex;
   align-items: center;
 }
