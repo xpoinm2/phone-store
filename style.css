@@ -37,6 +37,21 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
 }
 
 /* Navigation links */
+.top-nav {
+  display: flex;
+  align-items: center;
+}
+.top-nav a {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1F2937;
+  line-height: 1.4;
+  white-space: normal;
+  text-align: center;
+}
 .top-nav a {
   display: inline-block;
   margin: 0 15px;
