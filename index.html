@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechnoVillage — Главная</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,23 +11,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
+    <!-- Верхняя панель на всю ширину -->
     <div class="header-top">
       <div class="container">
-        <a href="index.html" class="logo"><img src="assets/logo.svg" alt="TechnoVillage Logo"></a>
+        <a href="index.html" class="logo">
+          <img src="assets/logo.svg" alt="TechnoVillage Logo">
+        </a>
         <nav class="top-nav">
           <a href="prisl-list.html">Прайс-лист</a>
           <a href="dropshipping.html">Фулфилмент<br>на маркетплейсах</a>
           <a href="contacts.html">Контакты</a>
         </nav>
         <div class="contact-icons">
-          <a href="https://wa.me/79302380000" target="_blank" class="icon"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></a>
-          <a href="https://t.me/your_username" target="_blank" class="icon"><img src="assets/icons/telegram.svg" alt="Telegram"></a>
+          <a href="https://wa.me/79302380000" target="_blank" class="icon">
+            <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+          </a>
+          <a href="https://t.me/your_username" target="_blank" class="icon">
+            <img src="assets/icons/telegram.svg" alt="Telegram">
+          </a>
           <span class="phone">+7 (930) 238-00-00</span>
         </div>
         <button class="hamburger">☰</button>
       </div>
     </div>
+
+    <!-- Заголовок выровнен по контейнеру -->
     <div class="container header-title">
       <h1>Оптовые и розничные продажи iPhone</h1>
       <p>Лучшие цены на iPhone, быстрая доставка по РФ и СНГ</p>
@@ -37,6 +48,7 @@
     </div>
   </header>
 
+  <!-- Sidebar Menu -->
   <aside class="sidebar">
     <button class="close-sidebar">×</button>
     <ul>
@@ -51,6 +63,7 @@
   <div class="overlay"></div>
 
   <main>
+    <!-- Slider -->
     <section class="slider">
       <div class="slide active"><img src="assets/banner1.jpg" alt="Banner 1"></div>
       <div class="slide"><img src="assets/banner2.jpg" alt="Banner 2"></div>
@@ -59,6 +72,7 @@
       <button class="next">›</button>
     </section>
 
+    <!-- Products Section -->
     <section id="section-products" class="section products container">
       <h2 class="section-title">Наши продукты</h2>
       <div class="product-grid">
@@ -70,13 +84,53 @@
           <p>REF — экран не оригинал</p>
           <a href="#" class="btn btn-primary">Подробнее</a>
         </div>
-        <!-- Дополнительные карточки товаров с тем же классом .product-card -->
+        <!-- Дополнительные карточки товаров -->
       </div>
     </section>
 
-    <!-- Остальные секции без изменений -->
+    <!-- About Section -->
+    <section id="about" class="section about container">
+      <h2 class="section-title">О нас</h2>
+      <p>Компания TechnoVillage на рынке с 2017 года...</p>
+      <ul class="stats">
+        <li><span>120+</span> партнёров</li>
+        <li><span>7</span> лет на рынке</li>
+        <li><span>3%</span> брак</li>
+        <li><span>60</span> дней гарантии</li>
+      </ul>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="section advantages container">
+      <h2 class="section-title">Наши преимущества</h2>
+      <div class="adv-cards">
+        <div class="adv-card"><img src="assets/icons/icon-price.svg" alt="Price"><p>Низкие цены</p></div>
+        <div class="adv-card"><img src="assets/icons/icon-warranty.svg" alt="Warranty"><p>Гарантия 60 дней</p></div>
+        <div class="adv-card"><img src="assets/icons/icon-delivery.svg" alt="Delivery"><p>Скоростная доставка</p></div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services container">
+      <h2 class="section-title">Наши услуги</h2>
+      <ul>
+        <li>Поставка устройств А+ из Китая</li>
+        <li>Проверка каждой единицы</li>
+        <li>Профессиональная упаковка</li>
+        <li>Поддержка 24/7</li>
+        <li>Гибкие способы оплаты</li>
+      </ul>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="section contacts container">
+      <h2 class="section-title">Контакты</h2>
+      <p>Телефон: <a href="tel:+79302380000">+7 (930) 238-00-00</a></p>
+      <p>Email: <a href="mailto:info@technovillage.ru">info@technovillage.ru</a></p>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer container">
     <nav class="footer-nav">
       <a href="index.html">Главная</a>
