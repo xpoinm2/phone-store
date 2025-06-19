@@ -46,7 +46,7 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
 .prev { left: 20px; }
 .next { right: 20px; }
 
-/* Full image display and hover zoom */
+//* Full image display and hover zoom */
 .product-card {
   overflow: hidden;
   border-radius: 8px;
@@ -60,8 +60,8 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
   height: auto;      /* сохраняем пропорции */
   transition: transform 0.3s ease;
 }
-.product-card:hover .product-img-wrap img {
-  transform: scale(1.05); /* только аккуратный zoom на 5% при ховере */
+.product-img-wrap:hover img {
+  transform: scale(1.05); /* zoom на 5% только при наведении на изображение */
 }
 
 
