@@ -208,13 +208,15 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
+  text-align: center; /* Центрирование содержимого, чтобы wrapper был по центру */
 }
 .product-img-wrap {
   overflow: hidden;
+  display: inline-block; /* сузить обёртку до размеров изображения */
 }
 .product-img-wrap img {
   display: block;
-  max-width: 100%;
+  max-width: 100%; /* не шире обёртки */
   height: auto;
   transition: transform 0.3s ease;
 }
