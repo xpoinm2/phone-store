@@ -1,46 +1,21 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* Reset and base */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
 .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 
-/* Logo sizing */
-.logo img {
-  height: 40px;
-  width: auto;
-}
+/* Logo */
+.logo img { height: 40px; width: auto; }
 
-/* Header top full width */
-.header-top {
-  width: 100%;
-  background: #FFFFFF;
-  padding: 15px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+/* Header */
+.header-top { width: 100%; background: #FFFFFF; padding: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
 .header-top .container { display: flex; align-items: center; justify-content: space-between; }
-
-/* Header title spacing adjustments */
-.header-title {
-  text-align: left;
-  padding: 60px 0 40px;
-}
-.header-title h1 {
-  margin-bottom: 16px;
-  line-height: 1.2;
-}
-.header-title p {
-  margin-bottom: 24px;
-  line-height: 1.4;
-}
+.header-title { text-align: left; padding: 60px 0 40px; }
+.header-title h1 { margin-bottom: 16px; line-height: 1.2; }
+.header-title p { margin-bottom: 24px; line-height: 1.4; }
 
 /* Navigation links */
-.top-nav {
-  display: flex;
-  align-items: center;
-}
+.top-nav { display: flex; align-items: center; }
 .top-nav a {
   display: inline-block;
   margin: 0 15px;
@@ -52,17 +27,6 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
   white-space: normal;
   text-align: center;
 }
-.top-nav a {
-  display: inline-block;
-  margin: 0 15px;
-  position: relative;
-  text-decoration: none;
-  font-weight: 500;
-  color: #1F2937;
-  line-height: 1.4;        /* увеличенный межстрочный интервал */
-  white-space: normal;     /* разрешить перенос строк */
-  text-align: center;      /* выравнивание многострочного текста */
-}
 .top-nav a::after {
   content: '';
   position: absolute;
@@ -73,123 +37,49 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
   background: #42aaff;
   transition: width 0.3s;
 }
-.top-nav a:hover::after {
-  width: 100%;
-}
+.top-nav a:hover::after { width: 100%; }
 
-/* Contact icons */ {
-  display: flex;
-  align-items: center;
-}
-.contact-icons .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #42aaff;
-  padding: 8px;
-  border-radius: 4px;
-  margin-right: 15px;
-}
-.contact-icons .icon img {
-  width: 24px;
-  height: 24px;
-}
-.contact-icons .phone {
-  font-weight: 700;
-}
+/* Contact icons */
+.contact-icons { display: flex; align-items: center; }
+.contact-icons .icon { display: inline-flex; align-items: center; justify-content: center; background: #42aaff; padding: 8px; border-radius: 4px; margin-right: 15px; }
+.contact-icons .icon img { width: 24px; height: 24px; }
+.contact-icons .phone { font-weight: 700; }
 
-/* Burger button */
-.hamburger {
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Sidebar and overlay */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -280px;
-  width: 280px;
-  height: 100%;
-  background: #FFFFFF;
-  padding: 20px;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
-  transition: left 0.3s ease;
-  z-index: 1000;
-}
+/* Sidebar, overlay */
+.hamburger { font-size: 28px; background: none; border: none; cursor: pointer; }
+.sidebar { position: fixed; top: 0; left: -280px; width: 280px; height: 100%; background: #FFFFFF; padding: 20px; box-shadow: 2px 0 8px rgba(0,0,0,0.2); transition: left 0.3s ease; z-index: 1000; }
 .sidebar.open { left: 0; }
-.close-sidebar {
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  float: right;
-}
-.sidebar ul {
-  list-style: none;
-  margin-top: 40px;
-}
-.sidebar li { margin: 20px 0; }
-.sidebar a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  color: #1F2937;
-  transition: color 0.2s;
-}
-.sidebar a:hover { color: #42aaff; }
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s;
-  z-index: 900;
-}
+.close-sidebar { background: none; border: none; font-size: 28px; float: right; cursor: pointer; }
+.overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); opacity: 0; visibility: hidden; transition: opacity 0.3s; z-index: 900; }
 .overlay.open { opacity: 1; visibility: visible; }
 
 /* Slider */
-.slider {
-  position: relative;
-  overflow: hidden;
-  height: 450px;
-  margin-top: 20px;
-}
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
+.slider { position: relative; overflow: hidden; height: 450px; margin-top: 20px; }
+.slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.6s ease; }
 .slide.active { opacity: 1; }
-.slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(31,41,55,0.6);
-  color: #fff;
-  border: none;
-  font-size: 32px;
-  cursor: pointer;
-  padding: 12px;
-  border-radius: 50%;
-}
+.slider img { width: 100%; height: 100%; object-fit: cover; }
+.prev, .next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(31,41,55,0.6); color: #fff; border: none; font-size: 32px; cursor: pointer; padding: 12px; border-radius: 50%; }
 .prev { left: 20px; }
 .next { right: 20px; }
+
+/* Hover Zoom Effect for Products */
+.product-card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.product-card .product-img-wrap {
+  overflow: hidden;
+}
+.product-card .product-img-wrap img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
 
 /* Sections */
 .section { padding: 60px 0; }
