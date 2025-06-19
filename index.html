@@ -13,7 +13,7 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <!-- Верхняя панель на всю ширину -->
+    <!-- Верхняя панель -->
     <div class="header-top">
       <div class="container">
         <a href="index.html" class="logo">
@@ -25,19 +25,14 @@
           <a href="contacts.html">Контакты</a>
         </nav>
         <div class="contact-icons">
-          <a href="https://wa.me/79302380000" target="_blank" class="icon">
-            <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
-          </a>
-          <a href="https://t.me/your_username" target="_blank" class="icon">
-            <img src="assets/icons/telegram.svg" alt="Telegram">
-          </a>
+          <a href="https://wa.me/79302380000" target="_blank" class="icon"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="https://t.me/your_username" target="_blank" class="icon"><img src="assets/icons/telegram.svg" alt="Telegram"></a>
           <span class="phone">+7 (930) 238-00-00</span>
         </div>
         <button class="hamburger">☰</button>
       </div>
     </div>
-
-    <!-- Заголовок выровнен по контейнеру -->
+    <!-- Заголовок -->
     <div class="container header-title">
       <h1>Оптовые и розничные продажи iPhone</h1>
       <p>Лучшие цены на iPhone, быстрая доставка по РФ и СНГ</p>
@@ -48,7 +43,7 @@
     </div>
   </header>
 
-  <!-- Sidebar Menu -->
+  <!-- Sidebar -->
   <aside class="sidebar">
     <button class="close-sidebar">×</button>
     <ul>
@@ -63,16 +58,18 @@
   <div class="overlay"></div>
 
   <main>
-    <!-- Slider -->
-    <section class="slider">
-      <div class="slide active"><img src="assets/banner1.jpg" alt="Banner 1"></div>
-      <div class="slide"><img src="assets/banner2.jpg" alt="Banner 2"></div>
-      <div class="slide"><img src="assets/banner3.jpg" alt="Banner 3"></div>
-      <button class="prev">‹</button>
-      <button class="next">›</button>
-    </section>
+    <!-- Slider внутри контейнера -->
+    <div class="container slider-container">
+      <section class="slider">
+        <div class="slide active"><img src="assets/banner1.jpg" alt="Banner 1"></div>
+        <div class="slide"><img src="assets/banner2.jpg" alt="Banner 2"></div>
+        <div class="slide"><img src="assets/banner3.jpg" alt="Banner 3"></div>
+        <button class="prev">‹</button>
+        <button class="next">›</button>
+      </section>
+    </div>
 
-    <!-- Products Section -->
+    <!-- Наши продукты -->
     <section id="section-products" class="section products container">
       <h2 class="section-title">Наши продукты</h2>
       <div class="product-grid">
@@ -84,14 +81,14 @@
           <p>REF — экран не оригинал</p>
           <a href="#" class="btn btn-primary">Подробнее</a>
         </div>
-        <!-- Дополнительные карточки товаров -->
+        <!-- ... копировать для остальных товаров -->
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- О нас -->
     <section id="about" class="section about container">
       <h2 class="section-title">О нас</h2>
-      <p>Компания TechnoVillage на рынке с 2017 года...</p>
+      <p>Компания TechnoVillage на рынке с 2017 года предлагает...</p>
       <ul class="stats">
         <li><span>120+</span> партнёров</li>
         <li><span>7</span> лет на рынке</li>
@@ -100,7 +97,7 @@
       </ul>
     </section>
 
-    <!-- Advantages Section -->
+    <!-- Наши преимущества -->
     <section class="section advantages container">
       <h2 class="section-title">Наши преимущества</h2>
       <div class="adv-cards">
@@ -110,7 +107,7 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Услуги -->
     <section id="services" class="section services container">
       <h2 class="section-title">Наши услуги</h2>
       <ul>
@@ -122,7 +119,7 @@
       </ul>
     </section>
 
-    <!-- Contacts Section -->
+    <!-- Контакты -->
     <section id="contacts" class="section contacts container">
       <h2 class="section-title">Контакты</h2>
       <p>Телефон: <a href="tel:+79302380000">+7 (930) 238-00-00</a></p>
