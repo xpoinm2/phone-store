@@ -46,6 +46,24 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
 .prev { left: 20px; }
 .next { right: 20px; }
 
+//* Full image display and hover zoom */
+.product-card {
+  overflow: visible; /* allow image to fully display */
+  border-radius: 8px;
+}
+.product-img-wrap {
+  overflow: visible; /* do not crop the image */
+}
+.product-img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto; /* natural height */
+  object-fit: contain; /* show full image */
+  transition: transform 0.3s ease;
+}
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
 /* Full image display and hover zoom */
 .product-card { overflow: hidden; border-radius: 8px; }
 .product-img-wrap { overflow: hidden; }
