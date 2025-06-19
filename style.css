@@ -47,24 +47,23 @@ body { font-family: 'Roboto', sans-serif; background: #FFFFFF; color: #1F2937; }
 .next { right: 20px; }
 
 /* Full image display and CSS scaling */
-/* Уменьшаем картинку в 2 раза и задаём лёгкий zoom при ховере */
 .product-card {
-  overflow: visible; /* показываем целиком */
+  overflow: visible; /* показываем изображение полностью */
   border-radius: 8px;
 }
 .product-img-wrap {
   overflow: visible;
+  display: flex;
+  justify-content: center;
 }
 .product-img-wrap img {
   display: block;
-  width: 100%;          /* растягиваем по ширине карточки */
-  height: auto;         /* сохраняем пропорции */
-  transform: scale(0.5);/* масштабируем в 2 раза */
-  transform-origin: top left;
+  width: 50%;      /* уменьшаем ширину в 2 раза */
+  height: auto;    /* сохраняем пропорции */
   transition: transform 0.3s ease;
 }
 .product-card:hover .product-img-wrap img {
-  transform: scale(0.5 * 1.05); /* прибавляем 5% к текущему масштабу */
+  transform: scale(1.05); /* приближает на 5% */
 }
 
 /* Sections */
