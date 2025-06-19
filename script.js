@@ -1,7 +1,5 @@
-// Логика: гамбургер, overlay и слайдер
-
 document.addEventListener('DOMContentLoaded', () => {
-  // Sidebar (гамбургер)
+  // Sidebar toggle
   const sidebar = document.querySelector('.sidebar');
   const btn = document.querySelector('.hamburger');
   const overlay = document.querySelector('.overlay');
@@ -15,23 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.classList.remove('open');
   });
 
-  // Slider
+  // Slider logic
   const slides = document.querySelectorAll('.slide');
   let currentIndex = 0;
-
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.classList.toggle('active', i === index);
     });
   }
-
   showSlide(currentIndex);
-
   document.querySelector('.prev').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     showSlide(currentIndex);
   });
-
   document.querySelector('.next').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
